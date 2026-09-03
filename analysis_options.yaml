@@ -1,0 +1,9 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    prefer_const_constructors: true
+    prefer_const_declarations: true
+    annotate_overrides: true
+    avoid_print: false # DefaultLogger uses print intentionally
+    prefer_single_quotes: true

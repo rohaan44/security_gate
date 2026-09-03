@@ -1,0 +1,32 @@
+name: security_gate
+description: >
+  A pluggable, callback-driven device-security-check pipeline for Flutter.
+  Run ordered security checks (jailbreak, root, Play Integrity, proxy, VPN,
+  keyboard, Wi-Fi) at app startup or anywhere — get a simple pass/fail result
+  and handle it with your own custom code.
+version: 0.1.0
+homepage: https://github.com/example/security_gate
+repository: https://github.com/example/security_gate
+issue_tracker: https://github.com/example/security_gate/issues
+
+environment:
+  sdk: ^3.9.2
+  flutter: '>=3.10.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.security_gate
+        pluginClass: SecurityGatePlugin
+      ios:
+        pluginClass: SecurityGatePlugin
